@@ -27,4 +27,9 @@ public class UserController {
     public void bye() {
         System.out.println("bye~~~~~~~~~~~");
     }
+
+    @GetMapping("/data")
+    public String data() {
+        return "<h1>data</h1>";
+    }
 }
