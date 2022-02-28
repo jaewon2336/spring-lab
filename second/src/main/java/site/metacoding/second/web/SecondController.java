@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController // 데이터 리턴 컨트롤러
 public class SecondController {
 
-    // 데이터베이스 second 테이블 생성됨
+    // 데이터베이스 user 테이블 생성됨
 
     // 주세요 Read - SELECT
     @GetMapping("/user") // user테이블의 모든 정보를 Get 주세요 -> 쿼리문 완성
