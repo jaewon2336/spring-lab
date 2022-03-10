@@ -24,7 +24,7 @@ public class DownloadController {
         return "download";
     }
 
-    @GetMapping("/list")
+    @GetMapping("/download")
     public String download(Model model) {
 
         // 1. DB 연결
