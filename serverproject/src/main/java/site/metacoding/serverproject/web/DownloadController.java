@@ -34,14 +34,15 @@ public class DownloadController {
 
         List<Hospital> hosList = Arrays.asList(response);
 
-        System.out.println("============" + hosList.get(0));
+        // System.out.println("============" + hosList.get(0));
 
         // DB에 saveAll() 호출
         hospitalRepository.saveAll(hosList);
 
         // 1. HospitalRepository의 findAll() 호출
         // 2. model에 담기
-        model.addAttribute("hospitals", hospitalRepository.findAll());
+        // model.addAttribute("hospitals", hospitalRepository.findAll());
+        model.addAttribute("hospitals", hosList);
 
         // 3. mustache 파일에 뿌리기
 
